@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* English */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap'); /* Tamil */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada&display=swap'); /* Kannada */
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap'); /* Hindi */
+
+:root {
+  background-image: url('./assets/Background-drop.png');
+  background-color: rgba(0, 20, 70, 0.8);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+}
