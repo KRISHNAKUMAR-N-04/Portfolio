@@ -93,7 +93,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.4 }}
-        className="absolute bottom-[1g0%] flex w-full justify-between px-12 text-3xl sm:text-4xl md:text-5xl font-extrabold"
+        className="absolute bottom-[10%] flex w-full justify-between px-12 text-3xl sm:text-4xl md:text-5xl font-extrabold"
       >
         <span>I'M <br /> KRISHNAKUMAR</span>
         <span className="text-right">FRONT <br /> END DEVELOPER</span>
