@@ -7,7 +7,6 @@
 :root {
   background-image: url('./assets/Background-drop.png');
   background-color: rgba(0, 20, 70, 0.8);
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat-y;
+  background-size:auto ;
+  background-position:top ;
 }

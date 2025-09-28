@@ -2,44 +2,56 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import profile from '../assets/GitProfile 3.png';
 import Greetings from "./Greetings";
+import name from '../assets/Krishnakumar..png'
 
 export default function Hero() {
-  const [available, setAvailable] = useState(true);
 
   return (
     <section
       id="home"
       className="relative min-h-screen flex flex-col items-center  text-white overflow-hidden "
-      
+
     >
-        
+
       {/* Background Blob Shape */}
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1, type: "spring" }}
-        className="absolute top-20 w-[80%] max-w-5xl h-[85%] rounded-[80%_80%_80%_80%/50%_50%_100%_100%] bg-gradient-to-b from-[#1e3a8a]/30 to-[#2563eb]/50 backdrop-blur-xl shadow-2xl"
+        className="
+    absolute inset-0 mx-auto mt-20
+    w-[95%] sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-[60%]
+    h-[55%] sm:h-[65%] md:h-[75%] lg:h-[80%] xl:h-[85%] 
+    max-w-7xl
+    rounded-[80%_80%_80%_80%/50%_50%_100%_100%]
+    bg-gradient-to-b from-[#1e3a8a]/30 to-[#2563eb]/50
+    backdrop-blur-xl shadow-2xl
+  "
       />
 
+
       {/* Navbar Placeholder (already in Navbar.jsx, but for alignment in hero) */}
-      <div className="absolute top-6 w-full flex justify-between items-center px-12">
-        <h1 className="text-xl font-semibold tracking-wide">Krishnakumar.</h1>
+      <div className="absolute top-6 w-full flex justify-between pl-35 pr-35 items-center px-12">
+        <img src={name} alt="Logo" className="h-4.5 w-auto" />
         <ul className="hidden md:flex gap-8 text-gray-200">
-          
+
         </ul>
+        <a href="#contact">
         <button className="bg-black px-4 py-2 rounded-full font-medium text-white hover:bg-gray-800 transition">
           Contact
         </button>
+        </a>
+        
       </div>
 
       {/* Text Above Profile */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-        className="mt-[7%]"
+        transition={{ delay: 0 }}
+        className="mt-[7%] z-12"
       >
-        <Greetings/>
+        <Greetings />
       </motion.h2>
 
       {/* Profile Image */}
@@ -52,29 +64,20 @@ export default function Hero() {
         className="relative z-10 w-[22%] w-[22%]  mt-[5%] rounded-full  shadow-gray-950 shadow-2xl object-cover "
       />
 
-      {/* Availability Toggle */}
+      {/* Availability Status */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="absolute left-[15%] top-[50%] flex items-center gap-3 bg-white/10 backdrop-blur-lg px-4 py-2 rounded-full border border-white/20 shadow-lg"
+        className="absolute left-[15%] top-[50%] flex items-center gap-3 
+             bg-white/10 backdrop-blur-lg px-4 py-2 rounded-full 
+             border border-white/20 shadow-lg"
       >
-        <button
-          onClick={() => setAvailable(!available)}
-          className={`w-10 h-5 flex items-center rounded-full p-1 transition ${
-            available ? "bg-blue-500" : "bg-gray-400"
-          }`}
-        >
-          <div
-            className={`bg-white w-4 h-4 rounded-full shadow-md transform transition ${
-              available ? "translate-x-5" : "translate-x-0"
-            }`}
-          />
-        </button>
-        <span className="text-sm">
-          {available ? "Available for new opportunities" : "Not available"}
-        </span>
+        {/* Static Status Dot */}
+        <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
+        <span className="text-sm">Available for opportunities</span>
       </motion.div>
+
 
       {/* Right Side Specialization Text */}
       <motion.div

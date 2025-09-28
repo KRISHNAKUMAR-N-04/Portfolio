@@ -1,6 +1,11 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import bgImage from "./assets/Background-drop.png";
+import Education from "./components/Education";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -8,6 +13,13 @@ function App() {
     >
       <Navbar />
       <Hero />
+      <About />
+      <Education />
+      <Skills/> 
+      <Experience/>
+      <Projects/>
+      <Contact />
+      
       {/* Next: About, Education, Skills, Experience, Projects, Contact, Footer */}
     </div>
   );
