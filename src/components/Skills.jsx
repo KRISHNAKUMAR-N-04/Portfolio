@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import java from "../assets/java.png";
 import python from "../assets/python.png";
 import c from "../assets/c.png";
-import js from "../assets/javascript.png";
+import js from "../assets/Javascript.png";
 import react from "../assets/react.png";
 import mongo from "../assets/mongodb.png";
 import html from "../assets/html.png";
