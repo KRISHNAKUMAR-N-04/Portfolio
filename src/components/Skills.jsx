@@ -17,7 +17,7 @@ import openCV from "../assets/opencv.png";
 import figma from "../assets/figma.png";
 import adobeXD from "../assets/AdoveXD.png";
 import framer from "../assets/Framer.png";
-import power from "../assets/PowerBI.png";
+import PowerBI from "../assets/PowerBI.png";
 import kaggle from "../assets/kaggle.png";
 import notion from "../assets/Notion.png";
 import github from "../assets/github.png";
@@ -110,7 +110,7 @@ const Skills = () => {
             <img src={github} alt="GitHub" className="h-10" />
             <img src={colab} alt="Colab" className="h-10" />
             <img src={terminal} alt="Terminal" className="h-10" />
-            <img src={power} alt="Power BI" className="h-10" />
+            <img src={PowerBI} alt="Power BI" className="h-10" />
             <img src={git} alt="Git" className="h-10" />
             <img src={wordpress} alt="WordPress" className="h-10" />
             <img src={live} alt="Ableton Live" className="h-10" />
